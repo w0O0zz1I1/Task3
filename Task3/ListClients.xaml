@@ -1,0 +1,36 @@
+﻿<Window x:Class="Task3.ListClients"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Task3"
+        mc:Ignorable="d"
+        Title="ListClients" Height="650" Width="1140">
+    <Grid>
+        <DataGrid Name="DgridClients" AutoGenerateColumns="False" Margin="10,203,0,0" HorizontalAlignment="Left" Width="686" Height="310" VerticalAlignment="Top">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Фамилия" Binding="{Binding FirstName}" Width="100"/>
+                <DataGridTextColumn Header="Имя" Binding="{Binding LastName}" Width="100"/>
+                <DataGridTextColumn Header="Отчество" Binding="{Binding Patronymic}" Width="100"/>
+                <DataGridTextColumn Header="Номер телефона" Binding="{Binding Phone}" Width="105"/>
+                <DataGridTextColumn Header="Дата регистрации" Binding="{Binding SignUpDate}" Width="110"/>
+                <DataGridTextColumn Header="Дата последнего посещения" Binding="{Binding SignUpDate}" Width="170
+                                    "/>
+            </DataGrid.Columns>
+        </DataGrid>
+        <Button Content="Удалить клиента" HorizontalAlignment="Left" Margin="10,532,0,0" VerticalAlignment="Top" Width="686" Height="38" FontSize="16"/>
+        <Rectangle HorizontalAlignment="Left" Height="321" Margin="701,249,0,0" Stroke="Black" VerticalAlignment="Top" Width="409"/>
+        <Label Content="Добавить нового клиента" HorizontalAlignment="Left" Margin="701,269,0,0" VerticalAlignment="Top" Width="409" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontWeight="Bold" FontSize="18"/>
+        <TextBox HorizontalAlignment="Left" Margin="712,327,0,0" TextWrapping="Wrap" Text="Фамилия" VerticalAlignment="Top" Width="386" Height="26" FontSize="18" Foreground="#FF8C8989"/>
+        <TextBox HorizontalAlignment="Left" Margin="712,384,0,0" TextWrapping="Wrap" Text="Имя" VerticalAlignment="Top" Width="386" Height="26" FontSize="18" Foreground="#FF8C8989"/>
+        <TextBox HorizontalAlignment="Left" Margin="712,433,0,0" TextWrapping="Wrap" Text="Отчество" VerticalAlignment="Top" Width="386" Height="26" FontSize="18" Foreground="#FF8C8989"/>
+        <TextBox HorizontalAlignment="Left" Margin="712,487,0,0" TextWrapping="Wrap" Text="Номер телефона" VerticalAlignment="Top" Width="386" Height="26" FontSize="18" Foreground="#FF8C8989"/>
+        <Button Content="Добавить нового клиента" HorizontalAlignment="Left" Margin="712,532,0,0" VerticalAlignment="Top" Width="386" Height="28" FontSize="14"/>
+        <TextBox HorizontalAlignment="Left" Margin="701,209,0,0" TextWrapping="Wrap" Text="Поиск" VerticalAlignment="Top" Width="235" Height="35" Foreground="#FF868484" FontSize="20"/>
+        <Button Content="Найти" HorizontalAlignment="Left" Margin="941,209,0,0" VerticalAlignment="Top" Width="169" Height="37"/>
+        <Image Source="/Image4.png" Stretch="Fill" Height="198" VerticalAlignment="Top" HorizontalAlignment="Left" Width="232"/>
+        <Label Content="Список клиенитов" HorizontalAlignment="Left" Margin="275,34,0,0" VerticalAlignment="Top" Width="477" Height="126" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="26" FontWeight="Bold"/>
+        <Button Content="+" HorizontalAlignment="Left" Margin="886,34,0,0" VerticalAlignment="Top" Height="143" Width="212" BorderBrush="#FF616161" Background="#FFEFEAEA" FontSize="44"/>
+
+    </Grid>
+</Window>
